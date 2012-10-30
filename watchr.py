@@ -5,7 +5,7 @@ from watchdog.events    import FileSystemEventHandler
 
 RegexObject = re.compile('')
 
-def watch(path = '.', matcher = None, recursive = False, allowFiles = True, allowDirs = True):
+def watch(matcher = None, path = '.', recursive = False, allowFiles = True, allowDirs = True):
    handler = FSEventWatcher(matcher    = matcher,
                             allowFiles = allowFiles,
                             allowDirs  = allowDirs)
