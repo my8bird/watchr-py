@@ -9,5 +9,6 @@ setup(name='watchr',
       author_email='my8bird@gmail.com',
       url='https://github.com/my8bird/watchr-py',
 
-      requires = ['watchdog', 'nose']
+      requires = ['watchdog', 'nose'],
+      py_modules = ['watchr']
      )
